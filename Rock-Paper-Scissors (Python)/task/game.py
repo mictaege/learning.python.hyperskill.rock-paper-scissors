@@ -45,7 +45,7 @@ def play_game(usr_opt):
         idx = rules.index(usr_opt)
         rotated = rules[idx:] + rules[:idx]
         rotated.pop(0)
-        split_idx = len(rotated) / 2
+        split_idx = len(rotated) // 2
         if rotated.index(comp_opt) < split_idx:
             print(f"Sorry, but the computer chose {comp_opt}")
         else:
